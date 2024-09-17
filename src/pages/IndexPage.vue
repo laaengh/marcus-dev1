@@ -1,5 +1,6 @@
 <template>
   <q-page class="row items-center justify-evenly">
+    hei
     <example-component
       title="Example component"
       active
@@ -10,13 +11,13 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import { Todo, Meta } from 'components/models';
-import ExampleComponent from 'components/ExampleComponent.vue';
+import { ref } from 'vue'
+import { Todo, Meta } from 'components/models'
+import ExampleComponent from 'components/ExampleComponent.vue'
 
 defineOptions({
   name: 'IndexPage'
-});
+})
 
 const todos = ref<Todo[]>([
   {
@@ -39,9 +40,9 @@ const todos = ref<Todo[]>([
     id: 5,
     content: 'ct5'
   }
-]);
+])
 
 const meta = ref<Meta>({
   totalCount: 1200
-});
+})
 </script>
